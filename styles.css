@@ -23,10 +23,38 @@ body {
   color: var(--text);
   background: linear-gradient(180deg, #fdf7ef 0%, #f8f3ea 100%);
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100svh;
+  min-height: 100dvh;
+}
+html {
+  height: 100%;
 }
 img {
   max-width: 100%;
   display: block;
+}
+.footer {
+  margin-top: auto;
+  width: 100%;
+}
+main {
+  flex: 1;
+}
+@media (max-width: 480px) {
+  .footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  main {
+    padding-bottom: 180px;
+  }
 }
 .container {
   width: min(1100px, 90%);
@@ -545,13 +573,18 @@ img {
 @media (max-width: 768px) {
   .nav-links {
     display: flex;
-    gap: 12px;
+    gap: 8px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
   }
   .nav-links a {
-    font-size: 14px;
+    font-size: 13px;
   }
   .hamburger {
     display: none;
+  }
+  .nav {
+    padding: 10px 0;
   }
   .search input {
     min-width: 140px;
@@ -581,7 +614,11 @@ img {
     gap: 8px;
   }
   .logo {
-    font-size: 26px;
+    font-size: 24px;
+  }
+  .logo-badge {
+    width: 32px;
+    height: 32px;
   }
   .footer-grid {
     grid-template-columns: 2fr 1fr 1fr 1fr;
@@ -792,6 +829,12 @@ img {
   .btn-outline {
     padding: 8px 12px;
   }
+  .nav-links a {
+    font-size: 12px;
+  }
+  .nav {
+    padding: 8px 0;
+  }
   .hero-copy h1 {
     font-size: 32px;
   }
@@ -826,6 +869,15 @@ img {
   .special-card .btn-outline {
     padding: 6px 10px;
     font-size: 12px;
+  }
+  .footer-grid {
+    align-items: start;
+  }
+  .footer-grid h4 {
+    font-size: 14px;
+  }
+  .footer-grid ul li a {
+    font-size: 13px;
   }
 }
 /* Halaman menu */
