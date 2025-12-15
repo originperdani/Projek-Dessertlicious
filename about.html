@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tentang • Dessertlicious</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <div class="logo">
+          <span class="logo-badge">
+            <img
+              src="./assets/Dessert Logo.jpg"
+              alt="Dessertlicious logo"
+              class="logo-img"
+            />
+          </span>
+          <span class="logo-text">Dessertlicious</span>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html#beranda">Beranda</a>
+          <a href="menu.html">Menu</a>
+          <a href="promo.html">Promo</a>
+          <a href="about.html" class="active">Tentang</a>
+          <a href="contact.html">Kontak</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="btn-outline" id="cartBtn">
+            Keranjang <span class="badge" id="cartCount">0</span>
+          </button>
+          <button class="btn" id="loginBtn">Masuk</button>
+          <button class="hamburger" id="hamburger" aria-label="Buka menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html#beranda">Beranda</a>
+        <a href="menu.html">Menu</a>
+        <a href="promo.html">Promo</a>
+        <a href="about.html">Tentang</a>
+        <a href="contact.html">Kontak</a>
+      </div>
+    </header>
+    <main>
+      <section class="about-hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <h1>Mengenal Dessertlicious</h1>
+            <p>
+              Kami membuat dessert harian dari bahan lokal berkualitas,
+              mengutamakan rasa, tekstur, dan kebahagiaan yang sederhana di
+              setiap gigitan. Misi kami adalah menghadirkan kue, pastry, dan
+              puding yang jujur: dibuat dengan bahan yang kamu kenal, proses
+              yang transparan, serta cita rasa yang konsisten.
+            </p>
+            <p>
+              Setiap batch dibuat kecil agar segar, dengan standar kontrol
+              kualitas yang ketat. Kami percaya kebahagiaan itu sederhana: krim
+              yang lembut, lapisan yang pas, manis yang seimbang, dan pengalaman
+              yang hangat dari kemasan hingga suapan pertama.
+            </p>
+            <div class="hero-cta">
+              <a class="btn" href="menu.html">Lihat Menu</a
+              ><a class="btn-outline" href="promo.html">Lihat Promo</a>
+            </div>
+          </div>
+          <div class="hero-media">
+            <img
+              src="./assets/Dessert Logo.jpg"
+              alt="Logo Dessertlicious"
+              style="
+                height: 360px;
+                width: 360px;
+                object-fit: cover;
+                border-radius: 50%;
+                display: block;
+                margin: 0 auto;
+              "
+            />
+          </div>
+        </div>
+      </section>
+      <section class="about-story">
+        <div class="container">
+          <h2 class="section-title">Tentang Kami</h2>
+          <p class="section-sub">Cerita singkat di balik setiap dessert.</p>
+          <p>
+            Dessertlicious berawal dari tugas mata kuliah Digital
+            Entrepreneurship. Dari proyek kelompok yang sederhana, kami belajar
+            memahami kebutuhan pelanggan, menguji rasa secara bertahap, dan
+            menata proses yang disiplin. Ide yang lahir di kelas kami bawa ke
+            dapur kecil dan komunitas sekitar kampus. Bahan kami berasal dari
+            pemasok yang dipercaya—telur segar, susu yang kaya, tepung
+            berkualitas, dan buah musiman.
+          </p>
+          <p>
+            Filosofi kami sederhana: rasa dahulu, kemudahan kemudian. Karena
+            itu, kami menjaga proses dari pemilihan bahan, pengolahan,
+            pemanggangan, pendinginan hingga pengemasan agar kamu selalu
+            menerima dessert dalam kondisi terbaik. Kami juga menghadirkan opsi
+            pre-order untuk acara serta kolaborasi dengan brand lokal.
+          </p>
+          <p>
+            Terima kasih telah mendukung perjalanan yang berawal dari tugas
+            kuliah hingga menjadi brand yang bermakna. Setiap pembelianmu
+            membantu rantai pasok lokal, memberi ruang bagi produsen kecil untuk
+            tumbuh, dan menyebarkan kebahagiaan sederhana satu gigitan ke
+            gigitan berikutnya.
+          </p>
+        </div>
+      </section>
+      <section class="about-values">
+        <div class="container cards-4">
+          <div class="card">
+            <h3>Segar Harian</h3>
+            <p>
+              Dibuat segar setiap pagi tanpa pengawet—langsung dari dapur ke
+              kamu.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Bahan Lokal</h3>
+            <p>Bahan pilihan dari petani & produsen lokal yang kami percaya.</p>
+          </div>
+          <div class="card">
+            <h3>Rasa Autentik</h3>
+            <p>
+              Resep chef, disesuaikan selera lokal—manis seimbang, tekstur kaya.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Harga Bersahabat</h3>
+            <p>Harga jujur, porsi pas—kebahagiaan tanpa bikin dompet berat.</p>
+          </div>
+        </div>
+      </section>
+      <section class="about-timeline">
+        <div class="container timeline">
+          <div class="tl-item">
+            <div class="tl-content">
+              <h4>2025 • Mei • Berawal dari Tugas Kelompok</h4>
+              <p>
+                Berawal dari tugas mata kuliah Digital Entrepreneurship, ide
+                sederhana kami berubah jadi langkah nyata. Kami belajar
+                merancang produk yang jujur, memvalidasi pasar kecil di sekitar
+                kampus, dan mengeksekusi rencana dengan sumber daya
+                terbatas—satu loyang, satu pelanggan, satu pembelajaran setiap
+                hari.
+              </p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-content">
+              <h4>2025 • Juli • Mulai Memikirkan Identitas</h4>
+              <p>
+                Kami sekelompok mulai memikirkan identitas brand, kualitas yang
+                konsisten, dan pengalaman pelanggan dari pemesanan sampai
+                penerimaan produk. Kami menyempurnakan resep, menata alur
+                produksi harian, menyesuaikan harga yang adil, dan merapikan
+                cara bercerita agar nilai kami mudah dipahami.
+              </p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-content">
+              <h4>2025 • Desember • Lahirlah Dessertlicious</h4>
+              <p>
+                Dengan keberanian kecil dan dukungan komunitas, lahirlah
+                Dessertlicious—komitmen untuk dessert harian yang dibuat lokal,
+                berkualitas konsisten, dan membawa kebahagiaan sederhana di
+                setiap gigitan. Perjalanan kami baru dimulai, dan kami terus
+                tumbuh bersama pelanggan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-process">
+        <div class="container steps">
+          <div class="step">
+            <h4>Pilih Bahan</h4>
+            <p>Telur, susu, dan buah terbaik dari pemasok tepercaya.</p>
+          </div>
+          <div class="step">
+            <h4>Olahan & Baking</h4>
+            <p>Proses terukur & teknik baking konsisten untuk rasa stabil.</p>
+          </div>
+          <div class="step">
+            <h4>Pendinginan</h4>
+            <p>
+              Pendinginan terkontrol memastikan tekstur lembut dan set sempurna.
+            </p>
+          </div>
+          <div class="step">
+            <h4>Packing</h4>
+            <p>Pengemasan rapi & higienis; siap dikirim atau diambil.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="logo">Dessertlicious</div>
+          <p>Maniskan harimu dengan dessert buatan harian.</p>
+        </div>
+        <div>
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="index.html#beranda">Beranda</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="promo.html">Promo</a></li>
+            <li><a href="about.html">Tentang</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Bantuan</h4>
+          <ul>
+            <li><a href="cara-pesan.html">Cara Pesan</a></li>
+            <li><a href="kebijakan.html">Kebijakan</a></li>
+            <li><a href="contact.html">Hubungi Kami</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ikuti kami</h4>
+          <div class="socials">
+            <a
+              href="https://www.instagram.com/originperdani?igsh=MTl0YXFydWZ3MG00OA=="
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+            >
+              <span class="social-icon instagram">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <rect
+                    x="3"
+                    y="3"
+                    width="18"
+                    height="18"
+                    rx="5"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  ></rect>
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="4"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    fill="none"
+                  ></circle>
+                  <circle cx="17" cy="7" r="1.5" fill="currentColor"></circle>
+                </svg>
+              </span> </a
+            ><a
+              href="https://www.tiktok.com/@gins.thrift?_r=1&_t=ZS-92Dagoeiuig"
+              target="_blank"
+              rel="noopener"
+              aria-label="TikTok"
+            >
+              <span class="social-icon tiktok">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M14 4v6.5c0 2.485-2.015 4.5-4.5 4.5a4.5 4.5 0 1 1 0-9c.17 0 .34.01.5.03V4h3c1.2 2.2 3.3 3.5 5 3.5V10c-1.9 0-3.8-.8-5-2.2V20h-3V10.5a2.5 2.5 0 1 0 0 5c1.379 0 2.5-1.121 2.5-2.5V4z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="copy">© 2025 Dessertlicious. Semua hak dilindungi.</div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

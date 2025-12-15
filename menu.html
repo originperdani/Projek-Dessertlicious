@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Menu • Dessertlicious</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="menu-page cake">
+    <header class="header">
+      <div class="container nav">
+        <div class="logo">
+          <span class="logo-badge">
+            <img
+              src="./assets/Dessert Logo.jpg"
+              alt="Dessertlicious logo"
+              class="logo-img"
+            />
+          </span>
+          <span class="logo-text">Dessertlicious</span>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html#beranda">Beranda</a>
+          <a href="menu.html" class="active">Menu</a>
+          <a href="promo.html">Promo</a>
+          <a href="about.html">Tentang</a>
+          <a href="contact.html">Kontak</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="btn-outline" id="cartBtn">
+            Keranjang <span class="badge" id="cartCount">0</span>
+          </button>
+          <button class="btn" id="loginBtn">Masuk</button>
+          <button class="hamburger" id="hamburger" aria-label="Buka menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html#beranda">Beranda</a>
+        <a href="menu.html">Menu</a>
+        <a href="promo.html">Promo</a>
+        <a href="about.html">Tentang</a>
+        <a href="contact.html">Kontak</a>
+      </div>
+    </header>
+    <main>
+      <section class="menu-hero">
+        <div class="container">
+          <h1 class="section-title">Menu Dessert</h1>
+          <p class="section-sub">
+            Pilih kategori favoritmu: Cake, Pastry, dan Puding.
+          </p>
+          <div class="menu-tabs">
+            <a class="btn" href="#cake">Cake</a>
+            <a class="btn-outline" href="#pastry">Pastry</a>
+            <a class="btn-outline" href="#puding">Puding</a>
+          </div>
+        </div>
+      </section>
+      <section id="cake" class="menu-section">
+        <div class="container">
+          <h2 class="section-title">Cake</h2>
+          <div class="menu-grid">
+            <div class="menu-card">
+              <img
+                src="./assets/strawberry-shortcake.jpeg"
+                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1541782810-9b2a7c44b3f8?q=80&w=1200&auto=format&fit=crop'"
+                alt="Strawberry Shortcake"
+              />
+              <div class="menu-info">
+                <h4>Strawberry Shortcake</h4>
+                <p>Cake vanilla dengan stroberi segar.</p>
+                <div class="menu-bottom">
+                  <span class="price">Rp 24.000</span>
+                  <div class="actions">
+                    <button
+                      class="btn-outline order-btn"
+                      data-name="Strawberry Shortcake"
+                      data-price="24000"
+                    >
+                      Pesan
+                    </button>
+                    <button
+                      class="btn-sm add-cart"
+                      data-name="Strawberry Shortcake"
+                    >
+                      Tambah
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="./assets/chocolate-fudge.jpeg"
+                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1495197351600-03e170bd8465?q=80&w=1200&auto=format&fit=crop'"
+                alt="Chocolate Fudge"
+              />
+              <div class="menu-info">
+                <h4>Chocolate Fudge</h4>
+                <p>Cokelat pekat dengan ganache.</p>
+                <div class="menu-bottom">
+                  <span class="price">Rp 26.000</span>
+                  <div class="actions">
+                    <button
+                      class="btn-outline order-btn"
+                      data-name="Chocolate Fudge"
+                      data-price="26000"
+                    >
+                      Pesan
+                    </button>
+                    <button class="btn-sm add-cart" data-name="Chocolate Fudge">
+                      Tambah
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="./assets/red-velvet.jpeg"
+                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1542826438-8c15a35f7b8f?q=80&w=1200&auto=format&fit=crop'"
+                alt="Red Velvet"
+              />
+              <div class="menu-info">
+                <h4>Red Velvet</h4>
+                <p>Lembut dengan cream cheese.</p>
+                <div class="menu-bottom">
+                  <span class="price">Rp 25.000</span>
+                  <div class="actions">
+                    <button
+                      class="btn-outline order-btn"
+                      data-name="Red Velvet"
+                      data-price="25000"
+                    >
+                      Pesan
+                    </button>
+                    <button class="btn-sm add-cart" data-name="Red Velvet">
+                      Tambah
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="./assets/tiramisu.jpeg"
+                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop'"
+                alt="Tiramisu"
+              />
+              <div class="menu-info">
+                <h4>Tiramisu</h4>
+                <p>Klasik dengan espresso dan mascarpone.</p>
+                <div class="menu-bottom">
+                  <span class="price">Rp 28.000</span>
+                  <div class="actions">
+                    <button
+                      class="btn-outline order-btn"
+                      data-name="Tiramisu"
+                      data-price="28000"
+                    >
+                      Pesan
+                    </button>
+                    <button class="btn-sm add-cart" data-name="Tiramisu">
+                      Tambah
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="./assets/matcha-cheesecake.jpeg"
+                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1551022370-3b1b4faff8c9?q=80&w=1200&auto=format&fit=crop'"
+                alt="Matcha Cheesecake"
+              />
+              <div class="menu-info">
+                <h4>Matcha Cheesecake</h4>
+                <p>Krimi dengan aroma matcha.</p>
+                <div class="menu-bottom">
+                  <span class="price">Rp 29.000</span>
+                  <div class="actions">
+                    <button
+                      class="btn-outline order-btn"
+                      data-name="Matcha Cheesecake"
+                      data-price="29000"
+                    >
+                      Pesan
+                    </button>
+                    <button
+                      class="btn-sm add-cart"
+                      data-name="Matcha Cheesecake"
+                    >
+                      Tambah
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="pastry" class="menu-section">
+        <div class="container">
+          <h2 class="section-title">Pastry</h2>
+          <div class="menu-grid">
+            <div class="menu-card">
+              <img
+                src="./assets/croissant-butter.jpeg"
+                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1562059390-a761a084768e?q=80&w=1200&auto=format&fit=crop'"
+                alt="Croissant Butter"
+              />
+              <div class="menu-info">
+                <h4>Croissant Butter</h4>
+                <p>Lapis renyah, mentega wangi.</p>
+                <div class="menu-bottom">
+                  <span class="price">Rp 15.000</span>
+                  <div class="actions">
+                    <button
+                      class="btn-outline order-btn"
+                      data-name="Croissant Butter"
+                      data-price="15000"
+                    >
+                      Pesan
+                    </button>
+                    <button
+                      class="btn-sm add-cart"
+                      data-name="Croissant Butter"
+                    >
+                      Tambah
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="./assets/pain-au-chocolat.jpeg"
+                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1519682333058-b0a2b1a78f21?q=80&w=1200&auto=format&fit=crop'"
+                alt="Pain Au Chocolat"
+              />
+              <div class="menu-info">
+                <h4>Pain Au Chocolat</h4>
+                <p>Isian cokelat leleh.</p>
+                <div class="menu-bottom">
+                  <span class="price">Rp 17.000</span>
+                  <div class="actions">
+                    <button
+                      class="btn-outline order-btn"
+                      data-name="Pain Au Chocolat"
+                      data-price="17000"
+                    >
+                      Pesan
+                    </button>
+                    <button
+                      class="btn-sm add-cart"
+                      data-name="Pain Au Chocolat"
+                    >
+                      Tambah
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="./assets/danish-fruit.jpeg"
+                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1499636136210-6f4ee915583e?q=80&w=1200&auto=format&fit=crop'"
+                alt="Danish Fruit"
+              />
+              <div class="menu-info">
+                <h4>Danish Fruit</h4>
+                <p>Krim custard dan buah segar.</p>
+                <div class="menu-bottom">
+                  <span class="price">Rp 16.000</span>
+                  <div class="actions">
+                    <button
+                      class="btn-outline order-btn"
+                      data-name="Danish Fruit"
+                      data-price="16000"
+                    >
+                      Pesan
+                    </button>
+                    <button class="btn-sm add-cart" data-name="Danish Fruit">
+                      Tambah
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="./assets/brownies-almond.jpeg"
+                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1483691278017-759d1fc6a5aa?q=80&w=1200&auto=format&fit=crop'"
+                alt="Brownies Almond"
+              />
+              <div class="menu-info">
+                <h4>Brownies Almond</h4>
+                <p>Padat cokelat dengan kacang.</p>
+                <div class="menu-bottom">
+                  <span class="price">Rp 18.000</span>
+                  <div class="actions">
+                    <button
+                      class="btn-outline order-btn"
+                      data-name="Brownies Almond"
+                      data-price="18000"
+                    >
+                      Pesan
+                    </button>
+                    <button class="btn-sm add-cart" data-name="Brownies Almond">
+                      Tambah
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="./assets/churros manis.jpeg"
+                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1543353071-873f17a7a5c6?q=80&w=1200&auto=format&fit=crop'"
+                alt="Churros Cinnamon"
+              />
+              <div class="menu-info">
+                <h4>Churros Cinnamon</h4>
+                <p>Gurih manis, gula kayu manis.</p>
+                <div class="menu-bottom">
+                  <span class="price">Rp 14.000</span>
+                  <div class="actions">
+                    <button
+                      class="btn-outline order-btn"
+                      data-name="Churros Cinnamon"
+                      data-price="14000"
+                    >
+                      Pesan
+                    </button>
+                    <button
+                      class="btn-sm add-cart"
+                      data-name="Churros Cinnamon"
+                    >
+                      Tambah
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="puding" class="menu-section">
+        <div class="container">
+          <h2 class="section-title">Puding</h2>
+          <div class="menu-grid">
+            <div class="menu-card">
+              <img
+                src="./assets/pannacotta-berry.jpeg"
+                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1543353071-873f17a7a5c6?q=80&w=1200&auto=format&fit=crop'"
+                alt="Pannacotta Berry"
+              />
+              <div class="menu-info">
+                <h4>Pannacotta Berry</h4>
+                <p>Krim lembut dengan saus berry.</p>
+                <div class="menu-bottom">
+                  <span class="price">Rp 20.000</span>
+                  <div class="actions">
+                    <button
+                      class="btn-outline order-btn"
+                      data-name="Pannacotta Berry"
+                      data-price="20000"
+                    >
+                      Pesan
+                    </button>
+                    <button
+                      class="btn-sm add-cart"
+                      data-name="Pannacotta Berry"
+                    >
+                      Tambah
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="./assets/mango-pudding.jpeg"
+                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1200&auto=format&fit=crop'"
+                alt="Mango Pudding"
+              />
+              <div class="menu-info">
+                <h4>Mango Pudding</h4>
+                <p>Manis segar buah mangga.</p>
+                <div class="menu-bottom">
+                  <span class="price">Rp 19.000</span>
+                  <div class="actions">
+                    <button
+                      class="btn-outline order-btn"
+                      data-name="Mango Pudding"
+                      data-price="19000"
+                    >
+                      Pesan
+                    </button>
+                    <button class="btn-sm add-cart" data-name="Mango Pudding">
+                      Tambah
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="./assets/caramel-custard.jpeg"
+                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1551022370-3b1b4faff8c9?q=80&w=1200&auto=format&fit=crop'"
+                alt="Caramel Custard"
+              />
+              <div class="menu-info">
+                <h4>Caramel Custard</h4>
+                <p>Puding karamel klasik.</p>
+                <div class="menu-bottom">
+                  <span class="price">Rp 18.000</span>
+                  <div class="actions">
+                    <button
+                      class="btn-outline order-btn"
+                      data-name="Caramel Custard"
+                      data-price="18000"
+                    >
+                      Pesan
+                    </button>
+                    <button class="btn-sm add-cart" data-name="Caramel Custard">
+                      Tambah
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="./assets/chocolate-mousse.jpeg"
+                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1495197351600-03e170bd8465?q=80&w=1200&auto=format&fit=crop'"
+                alt="Chocolate Mousse"
+              />
+              <div class="menu-info">
+                <h4>Chocolate Mousse</h4>
+                <p>Lembut, pekat cokelat.</p>
+                <div class="menu-bottom">
+                  <span class="price">Rp 21.000</span>
+                  <div class="actions">
+                    <button
+                      class="btn-outline order-btn"
+                      data-name="Chocolate Mousse"
+                      data-price="21000"
+                    >
+                      Pesan
+                    </button>
+                    <button
+                      class="btn-sm add-cart"
+                      data-name="Chocolate Mousse"
+                    >
+                      Tambah
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="./assets/vanilla-pudding.jpeg"
+                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1542826438-8c15a35f7b8f?q=80&w=1200&auto=format&fit=crop'"
+                alt="Vanilla Pudding"
+              />
+              <div class="menu-info">
+                <h4>Vanilla Pudding</h4>
+                <p>Aroma vanila natural.</p>
+                <div class="menu-bottom">
+                  <span class="price">Rp 17.000</span>
+                  <div class="actions">
+                    <button
+                      class="btn-outline order-btn"
+                      data-name="Vanilla Pudding"
+                      data-price="17000"
+                    >
+                      Pesan
+                    </button>
+                    <button class="btn-sm add-cart" data-name="Vanilla Pudding">
+                      Tambah
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="logo">Dessertlicious</div>
+          <p>Maniskan harimu dengan dessert buatan harian.</p>
+        </div>
+        <div>
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="#cake">Cake</a></li>
+            <li><a href="#pastry">Pastry</a></li>
+            <li><a href="#puding">Puding</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Bantuan</h4>
+          <ul>
+            <li><a href="cara-pesan.html">Cara Pesan</a></li>
+            <li><a href="kebijakan.html">Kebijakan</a></li>
+            <li><a href="contact.html">Hubungi Kami</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ikuti kami</h4>
+          <div class="socials">
+            <a
+              href="https://www.instagram.com/originperdani?igsh=MTl0YXFydWZ3MG00OA=="
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+            >
+              <span class="social-icon instagram">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <rect
+                    x="3"
+                    y="3"
+                    width="18"
+                    height="18"
+                    rx="5"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  ></rect>
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="4"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    fill="none"
+                  ></circle>
+                  <circle cx="17" cy="7" r="1.5" fill="currentColor"></circle>
+                </svg>
+              </span> </a
+            ><a
+              href="https://www.tiktok.com/@gins.thrift?_r=1&_t=ZS-92Dagoeiuig"
+              target="_blank"
+              rel="noopener"
+              aria-label="TikTok"
+            >
+              <span class="social-icon tiktok">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M14 4v6.5c0 2.485-2.015 4.5-4.5 4.5a4.5 4.5 0 1 1 0-9c.17 0 .34.01.5.03V4h3c1.2 2.2 3.3 3.5 5 3.5V10c-1.9 0-3.8-.8-5-2.2V20h-3V10.5a2.5 2.5 0 1 0 0 5c1.379 0 2.5-1.121 2.5-2.5V4z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="copy">© 2025 Dessertlicious. Semua hak dilindungi.</div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

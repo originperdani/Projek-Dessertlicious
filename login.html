@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Masuk • Dessertlicious</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="auth-page">
+    <header class="header">
+      <div class="container nav">
+        <div class="logo">
+          <span class="logo-badge">
+            <img
+              src="./assets/Dessert Logo.jpg"
+              alt="Dessertlicious logo"
+              class="logo-img"
+            />
+          </span>
+          <span class="logo-text">Dessertlicious</span>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html#beranda">Beranda</a>
+          <a href="menu.html">Menu</a>
+          <a href="promo.html">Promo</a>
+          <a href="about.html">Tentang</a>
+          <a href="contact.html">Kontak</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="btn-outline" id="cartBtn">
+            Keranjang <span class="badge" id="cartCount">0</span>
+          </button>
+          <button class="btn" id="loginBtn">Masuk</button>
+          <button class="hamburger" id="hamburger" aria-label="Buka menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html#beranda" class="active">Beranda</a>
+        <a href="menu.html">Menu</a>
+        <a href="promo.html">Promo</a>
+        <a href="about.html">Tentang</a>
+        <a href="contact.html">Kontak</a>
+      </div>
+    </header>
+    <main>
+      <section class="auth-hero">
+        <div class="container">
+          <div class="auth-card-wrap">
+            <div class="auth-card">
+              <div class="auth-tabs">
+                <button class="btn" id="tabLogin">Masuk</button>
+                <button class="btn-outline" id="tabRegister">Daftar</button>
+              </div>
+              <form id="loginForm" class="auth-form">
+                <h1 class="section-title" style="text-align: center">Login</h1>
+                <div class="form-row">
+                  <label>Email</label>
+                  <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="email@example.com"
+                    required
+                  />
+                </div>
+                <div class="form-row">
+                  <label>Kata sandi</label>
+                  <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="••••••••"
+                    required
+                  />
+                </div>
+                <div class="modal-actions" style="justify-content: center">
+                  <button type="submit" class="btn" id="loginSubmit">
+                    Masuk
+                  </button>
+                </div>
+                <div class="note" id="loginNote"></div>
+              </form>
+              <form id="registerForm" class="auth-form" style="display: none">
+                <h1 class="section-title" style="text-align: center">Daftar</h1>
+                <div class="form-row">
+                  <label>Nama</label>
+                  <input
+                    type="text"
+                    id="regName"
+                    placeholder="Nama lengkap"
+                    required
+                  />
+                </div>
+                <div class="form-row">
+                  <label>Email</label>
+                  <input
+                    type="email"
+                    id="regEmail"
+                    placeholder="email@example.com"
+                    required
+                  />
+                </div>
+                <div class="form-row">
+                  <label>Kata sandi</label>
+                  <input
+                    type="password"
+                    id="regPassword"
+                    placeholder="Minimal 6 karakter"
+                    required
+                  />
+                </div>
+                <div class="form-row">
+                  <label>Konfirmasi sandi</label>
+                  <input
+                    type="password"
+                    id="regConfirm"
+                    placeholder="Ulangi kata sandi"
+                    required
+                  />
+                </div>
+                <div class="modal-actions" style="justify-content: center">
+                  <button type="submit" class="btn" id="registerSubmit">
+                    Daftar
+                  </button>
+                </div>
+                <div class="note" id="registerNote"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
